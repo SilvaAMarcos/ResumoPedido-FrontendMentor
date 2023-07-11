@@ -35,9 +35,8 @@ main {
 
 .container {
     display: flex;
-    width: 330px;
-    height: 500px;
-    background-color: brown;
+    width: 350px;
+    height: 550px;
     border-radius: 15px;
     flex-direction: column;
 }
@@ -48,15 +47,15 @@ main {
     align-items: center;
     text-align: center;
     justify-content: center;
-    height: calc(500px - 32%);
-    background-color: aqua;
+    height: calc(550px - 32%);
+    background-color: #fff;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     padding-left: 12px;
     padding-right: 12px;
     margin-top: 0;
     margin-bottom: 0;
-    gap: 20px;
+    gap: 15px;
 }
 
 .hero {
@@ -66,48 +65,130 @@ main {
     border-top-right-radius: 15px;
 }
 
-/* .titulo{
+.titulo {
+    font-family: 'Red Hat Display', sans-serif;
+}
 
-} */
+p {
+    font-family: 'Red Hat Display', sans-serif;
+}
 
-
+.texto {
+    font-size: 14px;
+    color: hsl(224, 23%, 55%);
+}
 
 .tipoplano {
     display: flex;
-    background-color: rgba(245, 245, 245, 0.678);
+    background-color: rgb(250, 249, 249);
     width: 90%;
     height: 80px;
     position: relative;
     align-items: center;
     border-radius: 10px;
+    margin-top: 10px;
 }
 
-.botmusica{
+.botmusica {
     margin-left: 15px;
+    width: 35px;
 }
 
-.infoplano{
-    margin-left: 10px;
+.infoplano {
+    margin-left: 15px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.infoplano p {
+    font-size: 14px;
+}
+
+.infoum {
+    font-weight: bold;
+}
+
+.infodois {
+    color: hsl(224, 23%, 55%);
 }
 
 .change {
     position: absolute;
+    font-size: 13px;
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;
     right: 0;
     height: 100%;
+    font-weight: bold;
+    font-family: 'Red Hat Display', sans-serif;
     background-color: transparent;
     border: 0;
-    margin-right: 15px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.change:hover {
+    position: absolute;
+    font-size: 13px;
+    color: hsl(258, 72%, 59%);
+    text-decoration: underline;
+    right: 0;
+    height: 100%;
+    font-weight: bold;
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: transparent;
+    border: 0;
+    margin-right: 20px;
     cursor: pointer;
 }
 
 .pagar {
+    margin-top: 5px;
+    background-color: hsl(245, 75%, 52%);
+    border: 0;
+    font-weight: bold;
+    color: hsl(225, 100%, 94%);
+    border-radius: 7px;
     width: 90%;
-    height: 35px;
+    height: 40px;
     cursor: pointer;
+    box-shadow: 0px 15px 20px -2px rgba(183, 171, 241, 0.945);
 }
 
-.cancelapagamento{
+.pagar:hover {
+    margin-top: 5px;
+    background-color: hsl(258, 72%, 59%);
+    border: 0;
+    font-weight: bold;
+    color: hsl(225, 100%, 94%);
+    border-radius: 7px;
+    width: 90%;
+    height: 40px;
+    cursor: pointer;
+    box-shadow: 0px 15px 20px -2px rgba(183, 171, 241, 0.945);
+}
+
+
+.cancelapagamento {
+    margin-top: 10px;
     background-color: transparent;
+    font-weight: bold;
+    color: hsl(224, 23%, 55%);
     border: 0;
     cursor: pointer;
+    font-family: 'Red Hat Display', sans-serif;
+
+}
+
+.cancelapagamento:hover {
+    background-color: transparent;
+    font-weight: bold;
+    color: hsl(223, 47%, 23%);
+    border: 0;
+    cursor: pointer;
+    font-family: 'Red Hat Display', sans-serif;
+
 }
